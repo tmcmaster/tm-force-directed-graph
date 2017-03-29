@@ -1,0 +1,34 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<!--
+`tm-force-directed-graph`
+
+
+@demo demo/index.html 
+-->
+
+<dom-module id="tm-force-directed-graph">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]</h2>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'tm-force-directed-graph',
+
+      properties: {
+        prop1: {
+          type: String,
+          value: 'tm-force-directed-graph',
+        },
+      },
+
+    });
+  </script>
+</dom-module>
