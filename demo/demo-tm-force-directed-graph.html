@@ -1,0 +1,33 @@
+<link rel="import" href="../tm-force-directed-graph.html">
+<dom-module id="demo-tm-force-directed-graph">
+  <template>
+    <style>
+      :host {
+        display: inline-block;
+      }
+    </style>
+    <tm-force-directed-graph></tm-force-directed-graph>
+  </template>
+  <script>
+    (function(Polymer) {
+      Polymer({
+        is: 'demo-tm-force-directed-graph',
+        properties: {
+          data: {
+            type:String,
+            notify:true
+          }
+        },
+        observers: [
+          'debug(data)'
+        ],
+        debug: function(object) {
+          console.log(object);
+        },
+        ready: function() {
+          console.log('Element demo-tm-force-directed-graph has been created.');
+        }
+      });
+    })(window.Polymer);
+  </script>
+</dom-module>
