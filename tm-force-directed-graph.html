@@ -167,9 +167,10 @@
               if (isNumber(d.score) && d.score >= 0) return color(d.score);
               else return default_node_color;
             })
-            //.attr("r", function(d) { return size(d.size)||nominal_base_node_size; })
-            .style("stroke-width", nominal_stroke)
-            .style(towhite, "white");
+          //.attr("r", function(d) { return size(d.size)||nominal_base_node_size; })
+          .style("stroke-width", nominal_stroke)
+          .style(towhite, "white");
+
           var text = g.selectAll(".text")
             .data(graph.nodes)
             .enter().append("text")
